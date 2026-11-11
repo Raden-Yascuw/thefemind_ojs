@@ -55,3 +55,4 @@ lib/pkp/lib/vendor/wikimedia/
 lib/pkp/lib/vendor/zyxist/
 *.php
 *.inc.php
+public/

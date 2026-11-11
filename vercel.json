@@ -2,6 +2,10 @@
   "cleanUrls": true,
   "rewrites": [
     {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
       "source": "/index.php/thefemind/$$$call$$$/page/page/css",
       "destination": "/assets/1-stylesheet.css"
     },
