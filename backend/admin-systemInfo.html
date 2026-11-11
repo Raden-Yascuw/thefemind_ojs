@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>System Information | Open Journal Systems</title>
+	
+<meta name="generator" content="Open Journal Systems 3.3.0.7">
+	<link rel="stylesheet" href="/lib/pkp/styles/fontawesome/fontawesome.css?v=3.3.0.7" type="text/css" /><link rel="stylesheet" href="/styles/build.css?v=3.3.0.7" type="text/css" /><link rel="stylesheet" href="/assets/0-pkp-lib.css" type="text/css" />
+	<script src="/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.3.0.7" type="text/javascript"></script><script src="/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.3.0.7" type="text/javascript"></script><script type="text/javascript">$.pkp = $.pkp || {};$.pkp.app = {"currentLocale":"en_US","primaryLocale":"en_US","baseUrl":"","contextPath":"","apiBasePath":"\/api\/v1","pathInfoEnabled":true,"restfulUrlsEnabled":false,"tinyMceContentCSS":"\/plugins\/generic\/tinymce\/styles\/content.css","rtlLocales":[]};$.pkp.cons = {"LISTBUILDER_SOURCE_TYPE_TEXT":0,"LISTBUILDER_SOURCE_TYPE_SELECT":1,"LISTBUILDER_OPTGROUP_LABEL":"optGroupLabel","REALLY_BIG_NUMBER":10000,"UPLOAD_MAX_FILESIZE":"40M","WORKFLOW_STAGE_ID_PUBLISHED":0,"WORKFLOW_STAGE_ID_SUBMISSION":1,"WORKFLOW_STAGE_ID_INTERNAL_REVIEW":2,"WORKFLOW_STAGE_ID_EXTERNAL_REVIEW":3,"WORKFLOW_STAGE_ID_EDITING":4,"WORKFLOW_STAGE_ID_PRODUCTION":5,"INSERT_TAG_VARIABLE_TYPE_PLAIN_TEXT":"PLAIN_TEXT","ROLE_ID_MANAGER":16,"ROLE_ID_SITE_ADMIN":1,"ROLE_ID_AUTHOR":65536,"ROLE_ID_REVIEWER":4096,"ROLE_ID_ASSISTANT":4097,"ROLE_ID_READER":1048576,"ROLE_ID_SUB_EDITOR":17,"ROLE_ID_SUBSCRIPTION_MANAGER":2097152};$.pkp.plugins = {};</script><script src="/lib/pkp/js/lib/jquery/plugins/validate/jquery.validate.min.js?v=3.3.0.7" type="text/javascript"></script><script src="/lib/pkp/lib/vendor/moxiecode/plupload/js/plupload.full.min.js?v=3.3.0.7" type="text/javascript"></script><script src="/lib/pkp/lib/vendor/moxiecode/plupload/js/jquery.ui.plupload/jquery.ui.plupload.js?v=3.3.0.7" type="text/javascript"></script><script src="/lib/pkp/lib/vendor/moxiecode/plupload/js/i18n/en.js?v=3.3.0.7" type="text/javascript"></script><script src="/js/pkp.min.js?v=3.3.0.7" type="text/javascript"></script><script src="/lib/pkp/lib/vendor/tinymce/tinymce/tinymce.min.js?v=3.3.0.7" type="text/javascript"></script><script type="text/javascript">$.pkp.plugins.generic = $.pkp.plugins.generic || {};$.pkp.plugins.generic.tinymceplugin = [];</script><script src="/js/build.js?v=3.3.0.7" type="text/javascript"></script><script type="text/javascript">pkp.const = {"LISTBUILDER_SOURCE_TYPE_TEXT":0,"LISTBUILDER_SOURCE_TYPE_SELECT":1,"LISTBUILDER_OPTGROUP_LABEL":"optGroupLabel","REALLY_BIG_NUMBER":10000,"UPLOAD_MAX_FILESIZE":"40M","WORKFLOW_STAGE_ID_PUBLISHED":0,"WORKFLOW_STAGE_ID_SUBMISSION":1,"WORKFLOW_STAGE_ID_INTERNAL_REVIEW":2,"WORKFLOW_STAGE_ID_EXTERNAL_REVIEW":3,"WORKFLOW_STAGE_ID_EDITING":4,"WORKFLOW_STAGE_ID_PRODUCTION":5,"INSERT_TAG_VARIABLE_TYPE_PLAIN_TEXT":"PLAIN_TEXT","ROLE_ID_MANAGER":16,"ROLE_ID_SITE_ADMIN":1,"ROLE_ID_AUTHOR":65536,"ROLE_ID_REVIEWER":4096,"ROLE_ID_ASSISTANT":4097,"ROLE_ID_READER":1048576,"ROLE_ID_SUB_EDITOR":17,"ROLE_ID_SUBSCRIPTION_MANAGER":2097152};pkp.localeKeys = {"common.cancel":"Cancel","common.clearSearch":"Clear search phrase","common.close":"Close","common.commaListSeparator":", ","common.confirm":"Confirm","common.delete":"Delete","common.edit":"Edit","common.editItem":"Edit {$name}","common.error":"Error","common.filter":"Filters","common.filterAdd":"Add filter: {$filterTitle}","common.filterRemove":"Clear filter: {$filterTitle}","common.loading":"Loading","common.no":"No","common.noItemsFound":"No items found.","common.none":"None","common.ok":"OK","common.orderUp":"Increase position of {$itemTitle}","common.orderDown":"Decrease position of {$itemTitle}","common.pageNumber":"Page {$pageNumber}","common.pagination.goToPage":"Go to {$page}","common.pagination.label":"View additional pages","common.pagination.next":"Next page","common.pagination.previous":"Previous page","common.remove":"Remove","common.required":"Required","common.save":"Save","common.saving":"Saving","common.search":"Search","common.selectWithName":"Select {$name}","common.unknownError":"An unexpected error has occurred. Please reload the page and try again.","common.view":"View","list.viewLess":"Hide expanded details about {$name}","list.viewMore":"Show more details about {$name}","common.viewWithName":"View {$name}","common.yes":"Yes","form.dataHasChanged":"The data on this form has changed. Do you wish to continue without saving?","form.errorA11y":"Go to {$fieldLabel}: {$errorMessage}","form.errorGoTo":"Jump to next error","form.errorMany":"Please correct {$count} errors.","form.errorOne":"Please correct one error.","form.errors":"The form was not saved because {$count} error(s) were encountered. Please correct these errors and try again.","form.multilingualLabel":"{$label} in {$localeName}","form.multilingualProgress":"{$count}\/{$total} languages completed","form.saved":"Saved","help.help":"Help","navigation.backTo":"\u27f5 Back to {$page}","validator.required":"This field is required."};pkp.currentUser = {"csrfToken":"a97a518cb0dd81a178b5866e2758b6dd","id":1,"roles":[1,16]};</script>
+
+<script type="text/javascript">
+if (window.jQuery) {
+  jQuery.ajaxPrefilter(function(options) {
+    if (options.url && (options.url.indexOf('/static_api/') !== -1 || options.url.indexOf('$$$call$$$') !== -1 || options.url.indexOf('/api/v1/') !== -1)) {
+      options.type = 'GET';
+      options.method = 'GET';
+    }
+  });
+}
+</script>
+</head>
+<body class="pkp_page_admin pkp_op_systemInfo" dir="ltr">
+
+	<script type="text/javascript">
+		// Initialise JS handler.
+		$(function() {
+			$('body').pkpHandler(
+				'$.pkp.controllers.SiteHandler',
+				{
+					fetchNotificationUrl: "\/static_api\/index-fetchNotification.json",
+hasSystemNotifications: true
+				});
+		});
+	</script>
+
+	<div id="app" class="app ">
+		<header class="app__header" role="banner">
+							<dropdown class="app__headerAction app__contexts" v-cloak>
+					<template slot="button">
+						<icon icon="sitemap"></icon>
+						<span class="-screenReader">Journals</span>
+					</template>
+					<ul>
+																					<li>
+									<a href="/index.php/thefemind/submissions" class="pkpDropdown__action">
+										The Femind: Journal of Psycology of women and Gender
+									</a>
+								</li>
+																		</ul>
+				</dropdown>
+										<div class="app__contextTitle">
+					Open Journal Systems
+				</div>
+										<div class="app__headerActions" v-cloak>
+					
+					<div class="app__headerAction app__tasks">
+						<button ref="tasksButton" @click="openTasks">
+							<icon icon="bell-o"></icon>
+							<span class="-screenReader">Tasks</span>
+							<span v-if="unreadTasksCount" class="app__tasksCount">{{ unreadTasksCount }}</span>
+						</button>
+					</div>
+					<dropdown class="app__headerAction app__userNav">
+						<template slot="button">
+							<icon icon="user-circle-o"></icon>
+														<span class="-screenReader">adminojs</span>
+						</template>
+						<nav aria-label="User Navigation">
+															<div class="pkpDropdown__section">
+									<div class="app__userNav__changeLocale">Change Language</div>
+									<ul>
+																					<li>
+												<a href="/index.php/index/user/setLocale/id_ID" class="pkpDropdown__action">
+																										Bahasa Indonesia
+												</a>
+											</li>
+																					<li>
+												<a href="/index.php/index/user/setLocale/en_US" class="pkpDropdown__action">
+																											<icon icon="check" :inline="true"></icon>
+																										English
+												</a>
+											</li>
+																			</ul>
+								</div>
+																					<div class="pkpDropdown__section">
+								<ul>
+									<li v-if="backToDashboardLink">
+										<a :href="backToDashboardLink.url" class="pkpDropdown__action">
+											{{ backToDashboardLink.name }}
+										</a>
+									</li>
+									<li>
+										<a href="/index.php/index/user/profile" class="pkpDropdown__action">
+											Edit Profile
+										</a>
+									</li>
+									<li>
+																					<a href="/index.php/index/login/signOut" class="pkpDropdown__action">
+												Logout
+											</a>
+																			</li>
+								</ul>
+							</div>
+						</nav>
+					</dropdown>
+				</div>
+					</header>
+
+				<nav v-if="backToDashboardLink" class="app__returnHeader" aria-label="Site Navigation">
+			<a class="app__returnHeaderLink" :href="backToDashboardLink.url">
+				{{ backToDashboardLabel }}
+			</a>
+		</nav>
+
+		<div class="app__body">
+			
+				<nav v-if="!!menu && Object.keys(menu).length > 1" class="app__nav" aria-label="Site Navigation">
+					<ul>
+						<li v-for="(menuItem, key) in menu" :key="key" :class="!!menuItem.submenu ? 'app__navGroup' : ''">
+							<div v-if="!!menuItem.submenu" class="app__navItem app__navItem--hasSubmenu">
+								{{ menuItem.name }}
+							</div>
+							<a v-else class="app__navItem" :class="menuItem.isCurrent ? 'app__navItem--isCurrent' : ''" :href="menuItem.url">
+								{{ menuItem.name }}
+							</a>
+							<ul v-if="!!menuItem.submenu">
+								<li v-for="(submenuItem, submenuKey) in menuItem.submenu" :key="submenuKey">
+									<a class="app__navItem" :class="submenuItem.isCurrent ? 'app__navItem--isCurrent' : ''" :href="submenuItem.url">
+										{{ submenuItem.name }}
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			
+
+			<main class="app__main">
+				<div class="app__page">
+					
+													<nav class="app__breadcrumbs" role="navigation" aria-label="You are here:">
+								<ol>
+																			<li>
+																							<a href="/index.php/index/admin">
+													Administration
+												</a>
+												<span class="app__breadcrumbsSeparator" aria-hidden="true">/</span>
+																					</li>
+																			<li>
+																							<span aria-current="page">System Information</span>
+																					</li>
+																	</ol>
+							</nav>
+											
+
+					
+	<h1 class="app__pageHeading">
+		System Information
+	</h1>
+
+	
+	<div class="app__contentPanel">
+
+		<h2>Current version: 3.3.0.7 (October  9, 2026 - 06:39 AM)</h2>
+
+				<p><a href="/index.php/index/admin/systemInfo?versionCheck=1">Check for updates</a></p>
+		
+		<h2 id="versionHistory">Version history</h2>
+
+		<table class="pkpTable" aria-labelledby="versionHistory">
+			<thead>
+				<tr>
+					<th>Version</th>
+					<th>Major</th>
+					<th>Minor</th>
+					<th>Revision</th>
+					<th>Build</th>
+					<th>Date installed</th>
+				</tr>
+			</thead>
+			<tbody>
+									<tr>
+						<td>3.3.0.7</td>
+						<td>3</td>
+						<td>3</td>
+						<td>0</td>
+						<td>7</td>
+						<td>2026-10-09</td>
+					</tr>
+							</tbody>
+		</table>
+
+		<h2 id="serverInformation">Server Information</h2>
+
+		<table class="pkpTable" aria-labelledby="serverInformation">
+			<thead>
+				<tr>
+					<th>Setting Name</th>
+					<th>Setting Value</th>
+				</tr>
+			</thead>
+			<tbody>
+									<tr>
+						<td>OS platform</td>
+						<td>Linux</td>
+					</tr>
+									<tr>
+						<td>PHP version</td>
+						<td>8.2.12</td>
+					</tr>
+									<tr>
+						<td>Apache version</td>
+						<td></td>
+					</tr>
+									<tr>
+						<td>Database driver</td>
+						<td>mysql</td>
+					</tr>
+									<tr>
+						<td>Database server version</td>
+						<td>10.4.32-MariaDB</td>
+					</tr>
+							</tbody>
+		</table>
+
+		<h2>OJS Configuration</h2>
+
+		<table class="pkpTable" aria-labelledby="systemConfiguration">
+			<thead>
+				<tr>
+					<th>Setting Name</th>
+					<th>Setting Value</th>
+				</tr>
+			</thead>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">general</td>
+					</tr>
+											<tr>
+							<td>installed</td>
+							<td>1</td>
+						</tr>
+											<tr>
+							<td>base_url</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>session_cookie_name</td>
+							<td>OJSSID</td>
+						</tr>
+											<tr>
+							<td>session_lifetime</td>
+							<td>30</td>
+						</tr>
+											<tr>
+							<td>scheduled_tasks</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>time_zone</td>
+							<td>UTC</td>
+						</tr>
+											<tr>
+							<td>date_format_short</td>
+							<td>%Y-%m-%d</td>
+						</tr>
+											<tr>
+							<td>date_format_long</td>
+							<td>%B %e, %Y</td>
+						</tr>
+											<tr>
+							<td>datetime_format_short</td>
+							<td>%Y-%m-%d %I:%M %p</td>
+						</tr>
+											<tr>
+							<td>datetime_format_long</td>
+							<td>%B %e, %Y - %I:%M %p</td>
+						</tr>
+											<tr>
+							<td>time_format</td>
+							<td>%I:%M %p</td>
+						</tr>
+											<tr>
+							<td>disable_path_info</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>allow_url_fopen</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>restful_urls</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>trust_x_forwarded_for</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>citation_checking_max_processes</td>
+							<td>3</td>
+						</tr>
+											<tr>
+							<td>show_upgrade_warning</td>
+							<td>1</td>
+						</tr>
+											<tr>
+							<td>enable_minified</td>
+							<td>1</td>
+						</tr>
+											<tr>
+							<td>enable_beacon</td>
+							<td>1</td>
+						</tr>
+											<tr>
+							<td>sitewide_privacy_statement</td>
+							<td></td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">database</td>
+					</tr>
+											<tr>
+							<td>driver</td>
+							<td>mysql</td>
+						</tr>
+											<tr>
+							<td>host</td>
+							<td>localhost</td>
+						</tr>
+											<tr>
+							<td>username</td>
+							<td>root</td>
+						</tr>
+											<tr>
+							<td>password</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>name</td>
+							<td>the femind_ojs</td>
+						</tr>
+											<tr>
+							<td>debug</td>
+							<td></td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">cache</td>
+					</tr>
+											<tr>
+							<td>object_cache</td>
+							<td>none</td>
+						</tr>
+											<tr>
+							<td>memcache_hostname</td>
+							<td>localhost</td>
+						</tr>
+											<tr>
+							<td>memcache_port</td>
+							<td>11211</td>
+						</tr>
+											<tr>
+							<td>web_cache</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>web_cache_hours</td>
+							<td>1</td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">i18n</td>
+					</tr>
+											<tr>
+							<td>locale</td>
+							<td>en_US</td>
+						</tr>
+											<tr>
+							<td>client_charset</td>
+							<td>utf-8</td>
+						</tr>
+											<tr>
+							<td>connection_charset</td>
+							<td>utf8</td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">files</td>
+					</tr>
+											<tr>
+							<td>files_dir</td>
+							<td>/tmp/femind_work/thefemind_ojs/files</td>
+						</tr>
+											<tr>
+							<td>public_files_dir</td>
+							<td>public</td>
+						</tr>
+											<tr>
+							<td>public_user_dir_size</td>
+							<td>5000</td>
+						</tr>
+											<tr>
+							<td>umask</td>
+							<td>18</td>
+						</tr>
+											<tr>
+							<td>filename_revision_match</td>
+							<td>70</td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">finfo</td>
+					</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">security</td>
+					</tr>
+											<tr>
+							<td>force_ssl</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>force_login_ssl</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>session_check_ip</td>
+							<td>1</td>
+						</tr>
+											<tr>
+							<td>encryption</td>
+							<td>sha1</td>
+						</tr>
+											<tr>
+							<td>salt</td>
+							<td>YouMustSetASecretKeyHere!!</td>
+						</tr>
+											<tr>
+							<td>api_key_secret</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>reset_seconds</td>
+							<td>7200</td>
+						</tr>
+											<tr>
+							<td>allowed_html</td>
+							<td>a[href|target|title],em,strong,cite,code,ul,ol,li[class],dl,dt,dd,b,i,u,img[src|alt],sup,sub,br,p</td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">email</td>
+					</tr>
+											<tr>
+							<td>time_between_emails</td>
+							<td>3600</td>
+						</tr>
+											<tr>
+							<td>max_recipients</td>
+							<td>10</td>
+						</tr>
+											<tr>
+							<td>require_validation</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>validation_timeout</td>
+							<td>14</td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">search</td>
+					</tr>
+											<tr>
+							<td>min_word_length</td>
+							<td>3</td>
+						</tr>
+											<tr>
+							<td>results_per_keyword</td>
+							<td>500</td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">oai</td>
+					</tr>
+											<tr>
+							<td>oai</td>
+							<td>1</td>
+						</tr>
+											<tr>
+							<td>repository_id</td>
+							<td>thefemind.ojs</td>
+						</tr>
+											<tr>
+							<td>oai_max_records</td>
+							<td>100</td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">interface</td>
+					</tr>
+											<tr>
+							<td>items_per_page</td>
+							<td>25</td>
+						</tr>
+											<tr>
+							<td>page_links</td>
+							<td>10</td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">captcha</td>
+					</tr>
+											<tr>
+							<td>recaptcha</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>recaptcha_public_key</td>
+							<td>your_public_key</td>
+						</tr>
+											<tr>
+							<td>recaptcha_private_key</td>
+							<td>your_private_key</td>
+						</tr>
+											<tr>
+							<td>captcha_on_register</td>
+							<td>1</td>
+						</tr>
+											<tr>
+							<td>recaptcha_enforce_hostname</td>
+							<td></td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">cli</td>
+					</tr>
+											<tr>
+							<td>tar</td>
+							<td>/bin/tar</td>
+						</tr>
+											<tr>
+							<td>xslt_command</td>
+							<td></td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">proxy</td>
+					</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">debug</td>
+					</tr>
+											<tr>
+							<td>show_stacktrace</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>display_errors</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>deprecation_warnings</td>
+							<td></td>
+						</tr>
+											<tr>
+							<td>log_web_service_info</td>
+							<td></td>
+						</tr>
+									</tbody>
+							<tbody>
+					<tr>
+						<td colspan="2" class="app--admin__systemInfoGroup">curl</td>
+					</tr>
+									</tbody>
+					</table>
+
+
+		<a href="/index.php/index/admin/phpinfo" target="_blank">Extended PHP Information</a>
+	</div><!-- .pkp_page_content -->
+
+
+				</div>
+			</main>
+		</div>
+		<div
+			aria-live="polite"
+			aria-atomic="true"
+			class="app__notifications"
+			ref="notifications"
+			role="status"
+		>
+			<transition-group name="app__notification">
+				<notification v-for="notification in notifications" :key="notification.key" :type="notification.type" :can-dismiss="true" @dismiss="dismissNotification(notification.key)">
+					{{ notification.message }}
+				</notification>
+			</transition-group>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		pkp.registry.init('app', "AdminPage", {"menu":[],"tasksUrl":"\/static_api\/index-tasks.json","unreadTasksCount":0});
+	</script>
+
+	<script type="text/javascript">
+		// Initialize JS handler
+		$(function() {
+			$('#pkpHelpPanel').pkpHandler(
+				'$.pkp.controllers.HelpPanelHandler',
+				{
+					helpUrl: "\/index.php\/index\/help",
+					helpLocale: 'en',
+				}
+			);
+		});
+	</script>
+	<div id="pkpHelpPanel" class="pkp_help_panel" tabindex="-1">
+		<div class="panel">
+			<div class="header">
+				<a href="#" class="pkpHomeHelpPanel home">
+					Table of Contents
+				</a>
+				<a href="#" class="pkpCloseHelpPanel close">
+					Close
+				</a>
+			</div>
+			<div class="content">
+				<div class="pkp_loading">
+	<span class="pkp_spinner"></span>
+	<span class="message">Loading</span>
+</div>
+			</div>
+			<div class="footer">
+				<a href="#" class="pkpPreviousHelpPanel previous">
+					Previous
+				</a>
+				<a href="#" class="pkpNextHelpPanel next">
+					Next
+				</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

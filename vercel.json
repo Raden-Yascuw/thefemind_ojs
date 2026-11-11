@@ -1,0 +1,341 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/index.php/thefemind/$$$call$$$/page/page/css",
+      "destination": "/assets/1-stylesheet.css"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/page/page/tasks",
+      "destination": "/static_api/tasks.json"
+    },
+    {
+      "source": "/index.php/index/$$$call$$$/page/page/tasks",
+      "destination": "/static_api/index-tasks.json"
+    },
+    {
+      "source": "/index.php/thefemind/notification/fetchNotification",
+      "destination": "/static_api/fetchNotification.json"
+    },
+    {
+      "source": "/index.php/index/notification/fetchNotification",
+      "destination": "/static_api/index-fetchNotification.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/issues/future-issue-grid/fetch-grid",
+      "destination": "/static_api/future-issue-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/issues/back-issue-grid/fetch-grid",
+      "destination": "/static_api/back-issue-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/settings/sections/section-grid/fetch-grid",
+      "destination": "/static_api/section-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/settings/category/category-category-grid/fetch-grid",
+      "destination": "/static_api/category-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/settings/plugins/settings-plugin-grid/fetch-grid",
+      "destination": "/static_api/settings-plugin-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/plugins/plugin-gallery-grid/fetch-grid",
+      "destination": "/static_api/plugin-gallery-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/navigation-menus/navigation-menus-grid/fetch-grid",
+      "destination": "/static_api/navigation-menus-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/navigation-menus/navigation-menu-items-grid/fetch-grid",
+      "destination": "/static_api/navigation-menu-items-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/settings/languages/manage-language-grid/fetch-grid",
+      "destination": "/static_api/manage-language-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/settings/submission-checklist/submission-checklist-grid/fetch-grid",
+      "destination": "/static_api/submission-checklist-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/settings/genre/genre-grid/fetch-grid",
+      "destination": "/static_api/genre-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/settings/library/library-file-admin-grid/fetch-grid",
+      "destination": "/static_api/library-file-admin-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/settings/review-forms/review-form-grid/fetch-grid",
+      "destination": "/static_api/review-form-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/settings/prepared-emails/prepared-emails-grid/fetch-grid",
+      "destination": "/static_api/prepared-emails-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/settings/user/user-grid/fetch-grid",
+      "destination": "/static_api/user-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/grid/settings/roles/user-group-grid/fetch-grid",
+      "destination": "/static_api/user-group-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/tab/user/profile-tab/identity",
+      "destination": "/static_api/profile-identity.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/tab/user/profile-tab/contact",
+      "destination": "/static_api/profile-contact.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/tab/user/profile-tab/roles",
+      "destination": "/static_api/profile-roles.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/tab/user/profile-tab/public-profile",
+      "destination": "/static_api/profile-public.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/tab/user/profile-tab/change-password",
+      "destination": "/static_api/profile-password.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/tab/user/profile-tab/notification-settings",
+      "destination": "/static_api/profile-notifications.json"
+    },
+    {
+      "source": "/index.php/thefemind/$$$call$$$/tab/user/profile-tab/api-profile",
+      "destination": "/static_api/profile-api.json"
+    },
+    {
+      "source": "/index.php/index/$$$call$$$/grid/admin/context/context-grid/fetch-grid",
+      "destination": "/static_api/admin-context-grid.json"
+    },
+    {
+      "source": "/index.php/index/$$$call$$$/grid/admin/languages/admin-language-grid/fetch-grid",
+      "destination": "/static_api/admin-language-grid.json"
+    },
+    {
+      "source": "/index.php/thefemind/api/v1/_submissions",
+      "destination": "/static_api/api-submissions.json"
+    },
+    {
+      "source": "/index.php/thefemind/api/v1/issues",
+      "destination": "/static_api/api-issues.json"
+    },
+    {
+      "source": "/index.php/thefemind/api/v1/emailTemplates",
+      "destination": "/static_api/api-emailTemplates.json"
+    },
+    {
+      "source": "/index.php/thefemind/api/v1/stats/publications",
+      "destination": "/static_api/api-stats-publications.json"
+    },
+    {
+      "source": "/index.php/thefemind/api/v1/stats/editorial/averages",
+      "destination": "/static_api/api-stats-editorial-averages.json"
+    },
+    {
+      "source": "/index.php/thefemind/api/v1/stats/editorial",
+      "destination": "/static_api/api-stats-editorial.json"
+    },
+    {
+      "source": "/index.php/thefemind/api/v1/users",
+      "destination": "/static_api/api-users.json"
+    },
+    {
+      "source": "/index.php/thefemind/index",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/index.php/thefemind",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/index.php/thefemind/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/index.php/thefemind/issue/current",
+      "destination": "/issue/current.html"
+    },
+    {
+      "source": "/index.php/thefemind/issue/archive",
+      "destination": "/issue/archive.html"
+    },
+    {
+      "source": "/index.php/thefemind/about",
+      "destination": "/about/index.html"
+    },
+    {
+      "source": "/index.php/thefemind/about/submissions",
+      "destination": "/about/submissions.html"
+    },
+    {
+      "source": "/index.php/thefemind/about/editorialTeam",
+      "destination": "/about/editorialTeam.html"
+    },
+    {
+      "source": "/index.php/thefemind/about/privacy",
+      "destination": "/about/privacy.html"
+    },
+    {
+      "source": "/index.php/thefemind/about/contact",
+      "destination": "/about/contact.html"
+    },
+    {
+      "source": "/index.php/thefemind/about/aboutThisPublishingSystem",
+      "destination": "/about/aboutThisPublishingSystem.html"
+    },
+    {
+      "source": "/index.php/thefemind/search",
+      "destination": "/search.html"
+    },
+    {
+      "source": "/index.php/thefemind/user/register",
+      "destination": "/register.html"
+    },
+    {
+      "source": "/index.php/thefemind/login",
+      "destination": "/login.html"
+    },
+    {
+      "source": "/index.php/index/login",
+      "destination": "/login.html"
+    },
+    {
+      "source": "/index.php/thefemind/login/signIn",
+      "destination": "/backend/submissions.html"
+    },
+    {
+      "source": "/index.php/thefemind/login/signOut",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/index.php/index/login/signOut",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/index.php/thefemind/login/lostPassword",
+      "destination": "/lostPassword.html"
+    },
+    {
+      "source": "/index.php/thefemind/submissions",
+      "destination": "/backend/submissions.html"
+    },
+    {
+      "source": "/index.php/thefemind/manageIssues",
+      "destination": "/backend/manageIssues.html"
+    },
+    {
+      "source": "/index.php/thefemind/management/settings/context",
+      "destination": "/backend/settings-context.html"
+    },
+    {
+      "source": "/index.php/thefemind/management/settings/website",
+      "destination": "/backend/settings-website.html"
+    },
+    {
+      "source": "/index.php/thefemind/management/settings/workflow",
+      "destination": "/backend/settings-workflow.html"
+    },
+    {
+      "source": "/index.php/thefemind/management/settings/distribution",
+      "destination": "/backend/settings-distribution.html"
+    },
+    {
+      "source": "/index.php/thefemind/management/settings/access",
+      "destination": "/backend/settings-access.html"
+    },
+    {
+      "source": "/index.php/thefemind/stats/publications/publications",
+      "destination": "/backend/stats-publications.html"
+    },
+    {
+      "source": "/index.php/thefemind/stats/publications",
+      "destination": "/backend/stats-publications.html"
+    },
+    {
+      "source": "/index.php/thefemind/stats/editorial/editorial",
+      "destination": "/backend/stats-editorial.html"
+    },
+    {
+      "source": "/index.php/thefemind/stats/editorial",
+      "destination": "/backend/stats-editorial.html"
+    },
+    {
+      "source": "/index.php/thefemind/stats/users/users",
+      "destination": "/backend/stats-users.html"
+    },
+    {
+      "source": "/index.php/thefemind/stats/users",
+      "destination": "/backend/stats-users.html"
+    },
+    {
+      "source": "/index.php/thefemind/stats/reports",
+      "destination": "/backend/stats-reports.html"
+    },
+    {
+      "source": "/index.php/thefemind/management/tools",
+      "destination": "/backend/tools.html"
+    },
+    {
+      "source": "/index.php/thefemind/management/importexport",
+      "destination": "/backend/importexport.html"
+    },
+    {
+      "source": "/index.php/thefemind/management/permissions",
+      "destination": "/backend/permissions.html"
+    },
+    {
+      "source": "/index.php/thefemind/user/profile",
+      "destination": "/backend/profile.html"
+    },
+    {
+      "source": "/index.php/index/user/profile",
+      "destination": "/backend/profile.html"
+    },
+    {
+      "source": "/index.php/thefemind/user/setLocale/:locale",
+      "destination": "/backend/submissions.html"
+    },
+    {
+      "source": "/index.php/index/user/setLocale/:locale",
+      "destination": "/backend/admin.html"
+    },
+    {
+      "source": "/index.php/thefemind/submission/wizard",
+      "destination": "/backend/submission-wizard.html"
+    },
+    {
+      "source": "/index.php/thefemind/submission/step/1",
+      "destination": "/static_api/submission-step-1.json"
+    },
+    {
+      "source": "/index.php/index/admin",
+      "destination": "/backend/admin.html"
+    },
+    {
+      "source": "/index.php/index/admin/index",
+      "destination": "/backend/admin.html"
+    },
+    {
+      "source": "/index.php/index/admin/contexts",
+      "destination": "/backend/admin-contexts.html"
+    },
+    {
+      "source": "/index.php/index/admin/settings",
+      "destination": "/backend/admin-settings.html"
+    },
+    {
+      "source": "/index.php/index/admin/systemInfo",
+      "destination": "/backend/admin-systemInfo.html"
+    }
+  ]
+}
